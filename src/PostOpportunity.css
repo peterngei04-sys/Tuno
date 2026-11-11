@@ -1,0 +1,163 @@
+
+.post-page {
+  min-height: 100vh;
+  background: #faf9ff;
+  color: #25213a;
+}
+
+.post-nav {
+  height: 76px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #eeeaf7;
+}
+
+.post-logo {
+  font-size: 27px;
+  font-weight: 800;
+  color: #25213a;
+  text-decoration: none;
+}
+
+.post-logo span {
+  color: #8958f5;
+}
+
+.post-back {
+  color: #8053ed;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.post-container {
+  width: min(720px, 90%);
+  margin: 55px auto;
+}
+
+.post-eyebrow {
+  color: #8053ed;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.post-container h1 {
+  margin: 12px 0;
+  font-size: clamp(32px, 5vw, 46px);
+}
+
+.post-intro {
+  color: #777187;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.post-form {
+  background: white;
+  border: 1px solid #eeeaf7;
+  border-radius: 18px;
+  padding: 30px;
+  display: grid;
+  gap: 20px;
+  box-shadow: 0 12px 35px rgba(45, 30, 80, 0.05);
+}
+
+.post-form label {
+  display: grid;
+  gap: 9px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.post-form input,
+.post-form textarea,
+.post-form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #e5e0ef;
+  border-radius: 9px;
+  background: #fff;
+  color: #25213a;
+  font: inherit;
+  font-weight: 400;
+  outline: none;
+}
+
+.post-form input:focus,
+.post-form textarea:focus,
+.post-form select:focus {
+  border-color: #8958f5;
+  box-shadow: 0 0 0 3px rgba(137, 88, 245, 0.1);
+}
+
+.post-form input[type="date"] {
+  cursor: pointer;
+  color-scheme: light;
+}
+
+.post-form textarea {
+  resize: vertical;
+}
+
+.post-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.post-form button {
+  border: 0;
+  border-radius: 10px;
+  padding: 15px;
+  background: #8053ed;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.post-form button:hover:not(:disabled) {
+  background: #7040df;
+  transform: translateY(-2px);
+}
+
+.post-form button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.post-error {
+  color: #c62828;
+  font-size: 14px;
+}
+
+.post-note {
+  color: #827c91;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .post-nav {
+    padding: 0 5%;
+  }
+
+  .post-form {
+    padding: 20px;
+  }
+
+  .post-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .post-container {
+    margin: 35px auto;
+  }
+}
